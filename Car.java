@@ -1,3 +1,4 @@
+//group activity
 public interface Car{
     // Data members (implicitly public, static, and final)
     int speed = 0;
