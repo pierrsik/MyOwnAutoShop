@@ -1,5 +1,5 @@
 //group activity
-public abstract class Car{
+public class Car implements Vehicle{
     // Data members
     protected int speed;
     protected double price ;
@@ -7,7 +7,10 @@ public abstract class Car{
     protected String type;
     protected double mileage;
     protected String fuelType;
-
+    protected String year;
+    public double getSalePrice(){
+        return 1;
+    }
 
     public int getSpeed() {
         return speed;
@@ -61,7 +64,5 @@ public abstract class Car{
     public void setFuelType(String fuelType) {
         this.fuelType = fuelType;
     }
-    
-    //abstarct getSalePrice() method
-    abstract double getSalePrice();
+
 }
