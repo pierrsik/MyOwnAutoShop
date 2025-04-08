@@ -8,6 +8,8 @@ public class Suv extends Car{
     public void setWeight(int weight){
         this.weight=weight;
     }
+
+    //parameterized constructor
     public Suv(int speed,double price ,String color ,String type,double mileage,String fuelType,String year, int weight){
         super(speed,price,color,type,mileage,fuelType,year);
         this.weight=weight;

@@ -2,6 +2,7 @@
 public class Car implements Vehicle{
     // Data members
     protected static int id =1000;
+
     protected int speed;
     protected double price ;
     protected String color ;
