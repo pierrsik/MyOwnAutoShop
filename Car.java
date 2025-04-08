@@ -65,4 +65,14 @@ public class Car implements Vehicle{
         this.fuelType = fuelType;
     }
 
+    public Car(int speed,double price ,String color ,String type,double mileage,String fuelType,String year){
+        this.speed = speed;
+        this.price = price;
+        this.color = color;
+        this.type= type;
+        this.mileage = mileage;
+        this.fuelType = fuelType;
+        this.year = year;
+    }
+
 }
