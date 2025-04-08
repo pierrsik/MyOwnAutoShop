@@ -1,29 +1,67 @@
 //group activity
-public interface Car{
-    // Data members (implicitly public, static, and final)
-    int speed = 0;
-    double price = 0.0;
-    String color = "";
-    String type = "";
-    double mileage = 0.0;
-    String fuelType = "";
+public abstract class Car{
+    // Data members
+    protected int speed;
+    protected double price ;
+    protected String color ;
+    protected String type;
+    protected double mileage;
+    protected String fuelType;
 
-    // Abstract getters 
-    int getSpeed();
-    double getPrice();
-    String getColor();
-    String getType();
-    double getMileage();
-    String getFuelType();
 
-    // abstract setters;
-    void setSpeed();
-    void setPrice();
-    void setColor();
-    void setType();
-    void setMileage();
-    void setFuelType();
+    public int getSpeed() {
+        return speed;
+    }
 
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+
+    // Getter and Setter for price
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    // Getter and Setter for color
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    // Getter and Setter for type
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    // Getter and Setter for mileage
+    public double getMileage() {
+        return mileage;
+    }
+
+    public void setMileage(double mileage) {
+        this.mileage = mileage;
+    }
+
+    // Getter and Setter for fuelType
+    public String getFuelType() {
+        return fuelType;
+    }
+
+    public void setFuelType(String fuelType) {
+        this.fuelType = fuelType;
+    }
+    
     //abstarct getSalePrice() method
-    double getSalePrice();
+    abstract double getSalePrice();
 }
