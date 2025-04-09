@@ -11,10 +11,10 @@ public class Suv extends Car {
     }
 
     // parameterized constructor
-    public Suv(String name, int speed, double price, String color, String type, double mileage, String fuelType,
+    public Suv(String name, int speed, double price, String color, double mileage, String fuelType,
             String year,
             int weight) {
-        super(name, speed, price, color, type, mileage, fuelType, year);
+        super(name, speed, price, color, "Suv", mileage, fuelType, year);
         Suv.id = Suv.id + 1;
         this.weight = weight;
     }

@@ -131,17 +131,6 @@ public class Suvlist {
         return filteredList;
     }
 
-    // method to filter Suv objects by type
-    public ArrayList<Suv> filterByType(String type) {
-        ArrayList<Suv> filteredList = new ArrayList<>();
-        for (Suv suv : SuvList) {
-            if (suv.getType().equalsIgnoreCase(type)) {
-                filteredList.add(suv);
-            }
-        }
-        return filteredList;
-    }
-
     // method to filter Suv objects by name
     public ArrayList<Suv> filterByName(String name) {
         ArrayList<Suv> filteredList = new ArrayList<>();

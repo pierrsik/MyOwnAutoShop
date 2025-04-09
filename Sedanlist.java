@@ -120,17 +120,6 @@ public class Sedanlist {
         return filteredList;
     }
 
-    // method to filter Sedan objects by type
-    public ArrayList<Sedan> filterByType(String type) {
-        ArrayList<Sedan> filteredList = new ArrayList<>();
-        for (Sedan sedan : SedanList) {
-            if (sedan.getType().equalsIgnoreCase(type)) {
-                filteredList.add(sedan);
-            }
-        }
-        return filteredList;
-    }
-
     // method to filter Sedan objects by name
     public ArrayList<Sedan> filterByName(String name) {
         ArrayList<Sedan> filteredList = new ArrayList<>();
