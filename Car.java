@@ -1,18 +1,17 @@
 //group activity
-public class Car implements Vehicle{
+public abstract class Car implements Vehicle {
     // Data members
     // protected static int id =1000;
 
     protected int speed;
-    protected double price ;
-    protected String color ;
+    protected double price;
+    protected String color;
     protected String type;
     protected double mileage;
     protected String fuelType;
     protected String year;
-    public double getSalePrice(){
-        return 1;
-    }
+
+    abstract public double getSalePrice();
 
     public int getSpeed() {
         return speed;
@@ -67,12 +66,12 @@ public class Car implements Vehicle{
         this.fuelType = fuelType;
     }
 
-    public Car(int speed,double price ,String color ,String type,double mileage,String fuelType,String year){
+    public Car(int speed, double price, String color, String type, double mileage, String fuelType, String year) {
         // Car.id = Car.id +1;
         this.speed = speed;
         this.price = price;
         this.color = color;
-        this.type= type;
+        this.type = type;
         this.mileage = mileage;
         this.fuelType = fuelType;
         this.year = year;
