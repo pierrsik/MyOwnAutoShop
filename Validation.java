@@ -76,7 +76,7 @@ public class Validation {
 
     public boolean validateMileage(double mileage) {
         double minMileage = 0.0;
-        double maxMileage = 60.0;
+        double maxMileage = 70.0;
         try {
             if (mileage < minMileage) {
                 System.out.println("Mileage must not be negative");
@@ -109,7 +109,7 @@ public class Validation {
 
     }
 
-    public static boolean validateYear(String year) {
+    public boolean validateYear(String year) {
 
         try {
             // Check if the year is a 4-digit number
@@ -148,6 +148,18 @@ public class Validation {
         } catch (Exception e) {
             System.out.println("Invalid Input!!! Please provide valid inputs");
             return false;
+        }
+    }
+
+    public boolean validateWeight(int weight) {
+        if (weight <= 0) {
+            System.out.println("Weight must be positive");
+            return false;
+        } else if (weight > 6000) {
+            System.out.println("Weight must be reasonable");
+            return false;
+        } else {
+            return true;
         }
     }
 
