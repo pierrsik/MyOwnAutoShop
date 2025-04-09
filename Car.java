@@ -1,7 +1,7 @@
 //group activity
 public class Car implements Vehicle{
     // Data members
-    protected static int id =1000;
+    // protected static int id =1000;
 
     protected int speed;
     protected double price ;
@@ -68,7 +68,7 @@ public class Car implements Vehicle{
     }
 
     public Car(int speed,double price ,String color ,String type,double mileage,String fuelType,String year){
-        Car.id = Car.id +1;
+        // Car.id = Car.id +1;
         this.speed = speed;
         this.price = price;
         this.color = color;

@@ -3,4 +3,5 @@ import java.util.ArrayList;
 
 public class Sedanlist {
     public ArrayList<Sedan> SedanList = new ArrayList<>();
+    
 }
