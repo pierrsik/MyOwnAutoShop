@@ -1,8 +1,7 @@
 //group activity
 public abstract class Car implements Vehicle {
-    // Data members
-    // protected static int id =1000;
 
+    // Data members
     protected int speed;
     protected String name;
     protected double price;
@@ -73,6 +72,14 @@ public abstract class Car implements Vehicle {
 
     public void setFuelType(String fuelType) {
         this.fuelType = fuelType;
+    }
+
+    public String getYear() {
+        return year;
+    }
+
+    public void setYear(String year) {
+        this.year = year;
     }
 
     public Car(String name, int speed, double price, String color, String type, double mileage, String fuelType,

@@ -19,9 +19,12 @@ public class Suv extends Car {
         this.weight = weight;
     }
 
-    // Complete this method
     public double getSalePrice() {
-        return 1;
+        if (weight > 2000) {
+            return getPrice() * 0.9; // 10% discount for heavy SUVs
+        } else {
+            return getPrice() * 0.8; // 20% discount for light SUVs
+        }
     }
 
 }

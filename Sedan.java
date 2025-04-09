@@ -10,9 +10,9 @@ public class Sedan extends Car {
         this.manafacturerDiscount = manafacturerDiscount;
     }
 
-    // Complete this method
     public double getSalePrice() {
-        return 1;
+        double salePrice = getPrice() - manafacturerDiscount;
+        return salePrice;
     }
 
     // parameterized constructor
