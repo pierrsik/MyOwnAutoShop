@@ -3,7 +3,8 @@ import java.util.Arrays;
 
 public class Validation {
 
-    private static ArrayList<String> colorList = new ArrayList<>(Arrays.asList("red", "blue", "green"));
+    private static ArrayList<String> colorList = new ArrayList<>(
+            Arrays.asList("red", "blue", "white", "grey", "black"));
 
     public boolean validateSpeed(int speed) {
         try {

@@ -4,6 +4,7 @@ public abstract class Car implements Vehicle {
     // protected static int id =1000;
 
     protected int speed;
+    protected String name;
     protected double price;
     protected String color;
     protected String type;
@@ -33,6 +34,14 @@ public abstract class Car implements Vehicle {
     // Getter and Setter for color
     public String getColor() {
         return color;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public void setColor(String color) {
@@ -66,8 +75,10 @@ public abstract class Car implements Vehicle {
         this.fuelType = fuelType;
     }
 
-    public Car(int speed, double price, String color, String type, double mileage, String fuelType, String year) {
+    public Car(String name, int speed, double price, String color, String type, double mileage, String fuelType,
+            String year) {
         // Car.id = Car.id +1;
+        this.name = name;
         this.speed = speed;
         this.price = price;
         this.color = color;
