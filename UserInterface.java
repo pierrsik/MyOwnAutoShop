@@ -16,42 +16,42 @@ public class UserInterface {
         System.out.println("Enter the price of the SUV: ");
         double price = sc.nextDouble();
         sc.nextLine();
-        if (v.validatePrice(price)) {
+        if (!v.validatePrice(price)) {
             return;
         }
 
         System.out.println("Enter the color of the SUV: ");
         String color = sc.next();
         sc.nextLine();
-        if (v.validateColor(color)) {
+        if (!v.validateColor(color)) {
             return;
         }
 
         System.out.println("Enter the mileage of the SUV: ");
         double mileage = sc.nextDouble();
         sc.nextLine();
-        if (v.validateMileage(mileage)) {
+        if (!v.validateMileage(mileage)) {
             return;
         }
 
         System.out.println("Enter the fuel type of the SUV: ");
         String fuelType = sc.next();
         sc.nextLine();
-        if (v.validateFuelType(fuelType)) {
+        if (!v.validateFuelType(fuelType)) {
             return;
         }
 
         System.out.println("Enter the year of the SUV: ");
         String year = sc.next();
         sc.nextLine();
-        if (v.validateYear(year)) {
+        if (!v.validateYear(year)) {
             return;
         }
 
         System.out.println("Enter the weight of the SUV: ");
         int weight = sc.nextInt();
         sc.nextLine();
-        if (v.validateWeight(weight)) {
+        if (!v.validateWeight(weight)) {
             return;
         }
 
@@ -60,8 +60,7 @@ public class UserInterface {
     }
 
     public static void main(String[] args) {
-        Validation validation = new Validation();
-        System.out.println(validation.validateColor("lavender"));
+
     }
 
 }
