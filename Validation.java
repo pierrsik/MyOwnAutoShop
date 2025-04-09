@@ -3,7 +3,7 @@ import java.util.Arrays;
 
 public class Validation {
 
-    private static ArrayList<String> colorList = new ArrayList<>(
+    private static ArrayList<String> validColors = new ArrayList<>(
             Arrays.asList("red", "blue", "white", "grey", "black"));
 
     public boolean validateSpeed(int speed) {
@@ -45,7 +45,7 @@ public class Validation {
     public boolean validateColor(String color) {
         try {
             color = color.toLowerCase();
-            if (colorList.contains(color)) {
+            if (validColors.contains(color)) {
                 return true;
             } else {
                 System.out.println("That color option is not offered");
