@@ -18,6 +18,7 @@ public class Suv extends Car {
         this.weight = weight;
     }
 
+    //Complete this method
     public double getSalePrice() {
         return 1;
     }
