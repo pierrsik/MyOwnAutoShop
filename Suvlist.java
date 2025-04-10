@@ -1,5 +1,4 @@
 
-
 //houses all the created SUV instances
 import java.util.ArrayList;
 
@@ -66,12 +65,10 @@ public class Suvlist {
             System.out.println("No SUV found.");
             return;
         }
-        for (Suv suv : suvList) {
-            System.out.println("============================");
+        for (Suv suv : SuvList) {
             System.out.println(suv.getName());
             System.out.println(suv.getPrice());
             System.out.println(suv.getSalePrice());
-            System.out.println("============================");
 
         }
     }
