@@ -20,7 +20,7 @@ public class UserInterface {
 
                 case 2:
                     SedanInterface.sedanOptions();
-
+                    break;
                 case 3:
                     isValidCondition = true;
                     break;
@@ -30,6 +30,6 @@ public class UserInterface {
             }
 
         }
-
+        sc.close();
     }
 }
