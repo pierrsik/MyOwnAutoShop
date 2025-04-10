@@ -1,5 +1,5 @@
 package Sedan;
-
+import Car;
 public class Sedan extends Car {
     private double manafacturerDiscount;
     private int id;

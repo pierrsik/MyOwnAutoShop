@@ -1,4 +1,5 @@
 package Suv;
+import Car;
 
 public class Suv extends Car {
     private int weight;

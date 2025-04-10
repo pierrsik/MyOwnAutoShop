@@ -15,9 +15,9 @@ public class UserInterface {
 
         while (!isValidCondition) {
             System.out.println("=+=== Welcome to AutoShop ====+=");
-            System.out.println("|| 1. Suv option             ||" + "\n" +
-                    "|| 2. Sedan option            ||" + "\n" +
-                    "|| 3. Exit                    ||" + "\n" +
+            System.out.println("|| 1. Suv option               ||" + "\n" +
+                    "|| 2. Sedan option             ||" + "\n" +
+                    "|| 3. Exit                     ||" + "\n" +
                     "=+============================+=");
             System.out.print(bullet + " Enter Your coice: ");
             int option = sc.nextInt();
