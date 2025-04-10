@@ -17,40 +17,41 @@ public class SuvSearchInterface {
                     "|| 8. Exit                       ||" + "\n" +
                     "==================================" + "\n");
 
-            System.out.print("\t Enter the option for SUV: ");
+            System.out.print("\t* Enter the option for SUV: ");
             int key = sc.nextInt();
             sc.nextLine();
 
             switch (key) {
                 case 1:
-                    System.out.print("\t Enter the SUV's Company name: ");
+                    System.out.print("\t* Enter the SUV's Company name: ");
                     String companyName = sc.nextLine();
                     suvList.filterByName(companyName);
                     suvList.displaySUV(suvList.getFilteredData());
                     break;
 
                 case 2:
+                    System.out.print("\t* Enter the SUV's color: ");
                     String color = sc.nextLine();
                     suvList.filterByColor(color);
                     suvList.displaySUV(suvList.getFilteredData());
                     break;
 
                 case 3:
-                    System.out.print("\t Enter the sedan's fuel type: ");
+                    System.out.print("\t* Enter the sedan's fuel type: ");
                     String fuelType = sc.nextLine();
                     suvList.filterByFuelType(fuelType);
                     suvList.displaySUV(suvList.getFilteredData());
                     break;
 
                 case 5:
-                    System.out.print("\t Enter the sedan's year: ");
+                    System.out.print("\t* Enter the sedan's year: ");
                     String year = sc.nextLine();
                     suvList.filterByYear(year);
                     suvList.displaySUV(suvList.getFilteredData());
                     break;
 
                 case 6:
-                    System.out.print("\t Enter the sedan's minimum speed: ");
+                    System.out.print("\t* Enter the sedan's minimum speed: ");
                     double maxSpeed = sc.nextDouble();
                     sc.nextLine();
                     suvList.filterBySpeed(maxSpeed);
@@ -58,7 +59,7 @@ public class SuvSearchInterface {
                     break;
 
                 case 7:
-                    System.out.print("\t Enter the sedan's sales price: ");
+                    System.out.print("\t* Enter the sedan's sales price: ");
                     double salesPrice = sc.nextDouble();
                     sc.nextLine();
                     suvList.filterBySalePrice(salesPrice);
