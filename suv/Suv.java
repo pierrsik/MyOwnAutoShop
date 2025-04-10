@@ -1,5 +1,6 @@
-package Suv;
-import Car;
+package suv;
+
+import car.Car;
 
 public class Suv extends Car {
     private int weight;

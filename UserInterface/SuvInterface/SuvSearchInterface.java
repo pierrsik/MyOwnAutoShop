@@ -1,4 +1,4 @@
-package UserInterface.SuvInterface;
+package userInterface.suvInterface;
 
 public class SuvSearchInterface {
     public static void searchOption() {

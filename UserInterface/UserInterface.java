@@ -1,9 +1,9 @@
-package UserInterface;
+package userInterface;
 
 import java.util.Scanner;
 
-import UserInterface.SedanInterface.SedanInterface;
-import UserInterface.SuvInterface.SuvInterface;
+import userInterface.sedanInterface.SedanInterface;
+import userInterface.suvInterface.SuvInterface;
 
 public class UserInterface {
 

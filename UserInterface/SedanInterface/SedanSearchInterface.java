@@ -1,8 +1,8 @@
-package UserInterface.SedanInterface;
+package userInterface.sedanInterface;
 
 import java.util.Scanner;
 
-import Sedan.Sedanlist;
+import sedan.Sedanlist;
 
 public class SedanSearchInterface {
     public static String bullet = "\u2022";

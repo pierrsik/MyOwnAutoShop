@@ -1,4 +1,4 @@
-package Suv;
+package suv;
 
 //houses all the created SUV instances
 import java.util.ArrayList;

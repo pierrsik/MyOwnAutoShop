@@ -1,9 +1,10 @@
-package UserInterface.SedanInterface;
+package userInterface.sedanInterface;
 
 import java.util.Scanner;
 
-import Sedan.Sedan;
-import Sedan.Sedanlist;
+import sedan.Sedan;
+import sedan.Sedanlist;
+import validation.Validation;
 
 public class SedanInterface {
     private static String bullet = "\u2022";
