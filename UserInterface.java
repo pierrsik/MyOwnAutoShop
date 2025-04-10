@@ -1,10 +1,7 @@
-package userInterface;
+
 
 import java.util.NoSuchElementException;
 import java.util.Scanner;
-
-import userInterface.sedanInterface.SedanInterface;
-import userInterface.suvInterface.SuvInterface;
 
 public class UserInterface {
 

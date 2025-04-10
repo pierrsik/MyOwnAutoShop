@@ -1,10 +1,6 @@
-package userInterface.suvInterface;
+
 
 import java.util.Scanner;
-
-import suv.Suv;
-import suv.Suvlist;
-import validation.Validation;
 
 public class SuvInterface {
 

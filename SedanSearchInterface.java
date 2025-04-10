@@ -1,8 +1,6 @@
-package userInterface.sedanInterface;
+
 
 import java.util.Scanner;
-
-import sedan.Sedanlist;
 
 public class SedanSearchInterface {
 

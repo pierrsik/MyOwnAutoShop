@@ -1,7 +1,3 @@
-package sedan;
-
-import car.Car;
-
 public class Sedan extends Car {
     private double manufacturerDiscount;
     private int id;

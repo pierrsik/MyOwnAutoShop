@@ -1,10 +1,6 @@
-package userInterface.sedanInterface;
+
 
 import java.util.Scanner;
-
-import sedan.Sedan;
-import sedan.Sedanlist;
-import validation.Validation;
 
 public class SedanInterface {
 

@@ -1,8 +1,6 @@
-package userInterface.suvInterface;
+
 
 import java.util.Scanner;
-
-import suv.Suvlist;
 
 public class SuvSearchInterface {
     public static void searchOption(Suvlist suvList, Scanner sc) {

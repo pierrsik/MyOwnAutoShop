@@ -1,5 +1,3 @@
-package sedan;
-
 //houses all the created Sedan instances
 import java.util.ArrayList;
 
@@ -7,6 +5,12 @@ public class Sedanlist {
     private ArrayList<Sedan> SedanList = new ArrayList<>();
     private ArrayList<Sedan> filteredData = new ArrayList<>();
 
+    public Sedanlist() {
+        // Constructor
+        // Sedan sedan1 = new Sedan("Toyota Camry", 30000, 25000, "Red", "diesel", "2020", 150.0);
+        // SedanList.add(sedan1);
+        // Sedan sedan2 = new Sedan("Honda Accord", 28000, 24000, "Blue", "petrol", "2021", 140.0);
+    }
     // method to add a Sedan object to the list
     public void addSedan(Sedan sedan) {
         SedanList.add(sedan);
