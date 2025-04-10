@@ -1,1 +1,8 @@
 /*.class
+/car/*.class
+/sedan/*.class
+/suv/*.class
+/userInterface/*.class
+/userInterface/sedanUserInterface/*.class
+/userInterface/suvUserInterface/*.class
+/validation/*.class
