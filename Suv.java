@@ -1,9 +1,14 @@
 public class Suv extends Car {
     private int weight;
-    private static int id = 1000;
+    private int id;
+    private static int idCount = 1000;
 
     public int getWeight() {
         return weight;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public void setWeight(int weight) {
@@ -15,7 +20,7 @@ public class Suv extends Car {
             String year,
             int weight) {
         super(name, speed, price, color, "Suv", mileage, fuelType, year);
-        Suv.id = Suv.id + 1;
+        this.id = Suv.idCount + 1;
         this.weight = weight;
     }
 
