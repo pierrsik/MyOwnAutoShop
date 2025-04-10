@@ -16,39 +16,40 @@ public class SedanSearchInterface {
                     "|| 6. Search by sales Price      ||" + "\n" +
                     "|| 7. Return Back                ||" + "\n" +
                     "==================================" + "\n");
-            System.out.print("\t Enter the option for Sedan: ");
+            System.out.print("\t* Enter the option for Sedan: ");
             int key = sc.nextInt();
             sc.nextLine();
             switch (key) {
                 case 1:
-                    System.out.print("\t Enter the sedan's Company name: ");
+                    System.out.print("\t* Enter the sedan's Company name: ");
                     String companyName = sc.nextLine();
                     sedanlist.filterByName(companyName);
                     sedanlist.displaySedan(sedanlist.getFilteredData());
                     break;
 
                 case 2:
+                    System.out.print("\t* Enter the sedan's color: ");
                     String color = sc.nextLine();
                     sedanlist.filterByColor(color);
                     sedanlist.displaySedan(sedanlist.getFilteredData());
                     break;
 
                 case 3:
-                    System.out.print("\t Enter the sedan's fuel type: ");
+                    System.out.print("\t* Enter the sedan's fuel type: ");
                     String fuelType = sc.nextLine();
                     sedanlist.filterByFuelType(fuelType);
                     sedanlist.displaySedan(sedanlist.getFilteredData());
                     break;
 
                 case 4:
-                    System.out.print("\t Enter the sedan's year: ");
+                    System.out.print("\t* Enter the sedan's year: ");
                     String year = sc.nextLine();
                     sedanlist.filterByYear(year);
                     sedanlist.displaySedan(sedanlist.getFilteredData());
                     break;
 
                 case 5:
-                    System.out.print("\t Enter the sedan's minimum speed: ");
+                    System.out.print("\t* Enter the sedan's minimum speed: ");
                     double minSpeed = sc.nextDouble();
                     sc.nextLine();
                     sedanlist.filterBySpeed(minSpeed);
@@ -56,7 +57,7 @@ public class SedanSearchInterface {
                     break;
 
                 case 6:
-                    System.out.print("\t Enter the sedan's sales price: ");
+                    System.out.print("\t* Enter the sedan's sales price: ");
                     double salesPrice = sc.nextDouble();
                     sc.nextLine();
                     sedanlist.filterBySalePrice(salesPrice);

@@ -1,5 +1,4 @@
 
-
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
@@ -10,11 +9,11 @@ public class UserInterface {
         boolean isValidCondition = false;
 
         while (!isValidCondition) {
-            System.out.println("=+=== Welcome to AutoShop ====+=");
-            System.out.println("|| 1. Suv option               ||" + "\n" +
-                    "|| 2. Sedan option             ||" + "\n" +
-                    "|| 3. Exit                     ||" + "\n" +
-                    "=+============================+=");
+            System.out.println("\t\t\t"+"=+=== Welcome to AutoShop ====+=");
+            System.out.println("\t\t\t"+"|| 1. Suv option               ||" + "\n" +
+                               "\t\t\t"+"|| 2. Sedan option             ||" + "\n" +
+                               "\t\t\t"+"|| 3. Exit                     ||" + "\n" +
+                               "\t\t\t"+"=+============================+=");
             System.out.print("* Enter Your choice: ");
             try {
                 if (sc.hasNextInt()) {

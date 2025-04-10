@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class Validation {
 
     private static ArrayList<String> validColors = new ArrayList<>(
-            Arrays.asList("red", "blue", "white", "grey", "black"));
+            Arrays.asList("red", "blue", "white", "grey", "black","green", "yellow", "purple", "orange", "pink", "brown"));
 
     public boolean validateSpeed(int speed) {
         if (speed < 0) {
