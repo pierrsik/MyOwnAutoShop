@@ -66,16 +66,14 @@ public class Suvlist {
             return;
         }
         // Print table header
-        System.out.println(
-                "---------------------------------------------------------------------------------------------------------------------");
-        System.out.println(
-                "---------------------------------------------------------------------------------------------------------------------");
+        // Print table header
+        String border = "-".repeat(150);
+        System.out.println(border);
+        System.out.println(border);
         System.out.printf("| %-6s | %-20s | %-6s | %-10s | %-8s | %-10s | %-6s | %-12s | %-8s | %-12s |\n",
                 "ID", "Name", "Speed", "Color", "Mileage", "FuelType", "Year", "Price", "Weight", "SalePrice");
-        System.out.println(
-                "---------------------------------------------------------------------------------------------------------------------");
-        System.out.println(
-                "---------------------------------------------------------------------------------------------------------------------");
+        System.out.println(border);
+        System.out.println(border);
         // Print each SUV in the list
         for (Suv suv : suvList) {
             System.out.printf("| %-6d | %-20s | %-6d | %-10s | %-8.2f | %-10s | %-6s | %-12.2f | %-8d | %-12.2f |\n",
@@ -84,8 +82,7 @@ public class Suvlist {
         }
 
         // Print table footer
-        System.out.println(
-                "---------------------------------------------------------------------------------------------------------------------");
+        System.out.println(border);
         
     }
 
