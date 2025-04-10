@@ -65,8 +65,6 @@ public class Sedanlist {
     }
 
     // display the Sedan
-    // display the Sedan
-    // display the Sedan
     public void displaySedan(ArrayList<Sedan> sedanList) {
         if (sedanList == null || sedanList.isEmpty()) {
             System.out.println("No Sedans available.");
