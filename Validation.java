@@ -76,7 +76,7 @@ public class Validation {
 
     public boolean validateMileage(double mileage) {
         double minMileage = 0.0;
-        double maxMileage = 70.0;
+        double maxMileage = 50.0;
         try {
             if (mileage < minMileage) {
                 System.out.println("Mileage must not be negative");

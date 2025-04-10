@@ -3,7 +3,7 @@
 import java.util.ArrayList;
 
 public class Sedanlist {
-    public ArrayList<Sedan> SedanList = new ArrayList<>();
+    private ArrayList<Sedan> SedanList = new ArrayList<>();
 
     // method to add a Sedan object to the list
     public void addSedan(Sedan sedan) {

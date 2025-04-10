@@ -3,11 +3,20 @@
 import java.util.ArrayList;
 
 public class Suvlist {
-    public ArrayList<Suv> SuvList = new ArrayList<>();
+    private ArrayList<Suv> SuvList = new ArrayList<>();
 
     // method to add a Suv object to the list
     public void addSuv(Suv suv) {
         SuvList.add(suv);
+    }
+
+    public void displaySuv() {
+        for (Suv suv : SuvList) {
+            System.out.println(suv.getName());
+            System.out.println(suv.getPrice());
+            System.out.println(suv.getSalePrice());
+
+        }
     }
 
     // method to get the list of Suv objects
