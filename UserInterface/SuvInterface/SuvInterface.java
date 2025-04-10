@@ -8,63 +8,71 @@ import validation.Validation;
 
 public class SuvInterface {
 
-    private static String bullet = "\u2022";
-
     public static void addSuvIntheList(Scanner sc, Suvlist suvList, Validation v) {
-        System.out.print("\t" + bullet + " Enter the name of the SUV: ");
+        System.out.print("\t Enter the name of the SUV: ");
         String name = sc.nextLine();
 
-        System.out.print("\t" + bullet + " Enter the speed of the SUV: ");
+        System.out.print("\t Enter the speed of the SUV:(in kmph) ");
         int speed = sc.nextInt();
-        if (!v.validateSpeed(speed)) {
-            return;
+        while (!v.validateSpeed(speed)) {
+            System.out.print("\t Enter the speed of the SUV:(in kmph) ");
+            speed = sc.nextInt();
+            sc.nextLine();
         }
 
-        System.out.print("\t" + bullet + " Enter the price of the SUV: ");
+        System.out.print("\t Enter the price of the SUV(in Rs): ");
         double price = sc.nextDouble();
         sc.nextLine();
-        if (!v.validatePrice(price)) {
-            return;
+        while (!v.validatePrice(price)) {
+            System.out.print("\t Enter the price of the SUV(in Rs): ");
+            price = sc.nextDouble();
+            sc.nextLine();
         }
 
-        System.out.print("\t" + bullet + " Enter the color of the SUV: ");
+        System.out.print("\t Enter the color of the SUV: ");
         String color = sc.nextLine();
-        if (!v.validateColor(color)) {
-            return;
+        while (!v.validateColor(color)) {
+            System.out.print("\t Enter the color of the SUV: ");
+            color = sc.nextLine();
         }
 
-        System.out.print("\t" + bullet + " Enter the mileage of the SUV: ");
+        System.out.print("\t Enter the mileage of the SUV(0-50): ");
         double mileage = sc.nextDouble();
         sc.nextLine();
-        if (!v.validateMileage(mileage)) {
-            return;
+        while (!v.validateMileage(mileage)) {
+            System.out.print("\t Enter the mileage of the SUV(0-50): ");
+            mileage = sc.nextDouble();
+            sc.nextLine();
         }
 
-        System.out.print("\t" + bullet + " Enter the fuel type of the SUV: ");
+        System.out.print("\t Enter the fuel type of the SUV(petrol/deisel): ");
         String fuelType = sc.nextLine();
-        if (!v.validateFuelType(fuelType)) {
-            return;
+        while (!v.validateFuelType(fuelType)) {
+            System.out.print("\t Enter the fuel type of the SUV(petrol/deisel): ");
+            fuelType = sc.nextLine();
         }
 
-        System.out.print("\t" + bullet + " Enter the year of the SUV: ");
+        System.out.print("\t Enter the year of the SUV(1950-2025): ");
         String year = sc.nextLine();
-        if (!v.validateYear(year)) {
-            return;
+        while (!v.validateYear(year)) {
+            System.out.print("\t Enter the year of the SUV(1950-2025): ");
+            year = sc.nextLine();
         }
 
-        System.out.print("\t" + bullet + " Enter the weight of the SUV: ");
+        System.out.print("\t Enter the weight of the SUV(in Kg): ");
         int weight = sc.nextInt();
         sc.nextLine();
-        if (!v.validateWeight(weight)) {
-            return;
+        while (!v.validateWeight(weight)) {
+            System.out.print("\t Enter the weight of the SUV(in Kg): ");
+            weight = sc.nextInt();
+            sc.nextLine();
         }
 
         Suv suv = new Suv(name, speed, price, color, mileage, fuelType, year, weight);
         suvList.addSuv(suv);
     }
 
-    public static void suvOptions() {
-        Scanner sc = new Scanner(System.in);
+    public static void suvOptions(Scanner sc) {
         boolean isValidCondition = false;
         Validation validation = new Validation();
         Suvlist suvlist = new Suvlist();
@@ -76,8 +84,7 @@ public class SuvInterface {
                     "|| 4. Remove SUV             ||" + "\n" +
                     "|| 5. Return to main menu    ||" + "\n" +
                     "==============================");
-            // String bullet = "\u2022";
-            System.out.print(bullet + "Enter Your choice for SUV: ");
+            System.out.print("Enter Your choice for SUV: ");
             int SUVoption = sc.nextInt();
             sc.nextLine();
 
@@ -86,13 +93,13 @@ public class SuvInterface {
                     addSuvIntheList(sc, suvlist, validation);
                     break;
                 case 2:
-                    suvlist.displaySuv();
+                    suvlist.displaySUV(suvlist.getSuvList());
                     break;
                 case 3:
-                    SuvSearchInterface.searchOption();
+                    SuvSearchInterface.searchOption(suvlist, sc);
                     break;
                 case 4:
-                    System.out.print("\t" + bullet + " Give the name of the car you want to remove: ");
+                    System.out.print("\t Give the name of the car you want to remove: ");
                     String carName = sc.nextLine();
                     suvlist.removeSuvByName(carName);
                     break;

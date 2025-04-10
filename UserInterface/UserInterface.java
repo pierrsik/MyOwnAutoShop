@@ -26,7 +26,7 @@ public class UserInterface {
 
                     switch (option) {
                         case 1:
-                            SuvInterface.suvOptions();
+                            SuvInterface.suvOptions(sc);
                             break;
                         case 2:
                             SedanInterface.sedanOptions(sc);
