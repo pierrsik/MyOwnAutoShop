@@ -1,5 +1,6 @@
-//houses all the created SUV instances
+package Suv;
 
+//houses all the created SUV instances
 import java.util.ArrayList;
 
 public class Suvlist {
@@ -89,7 +90,7 @@ public class Suvlist {
     public ArrayList<Suv> filterByWeight(int weight) {
         ArrayList<Suv> filteredList = new ArrayList<>();
         for (Suv suv : SuvList) {
-            if (suv.getWeight() == weight) {
+            if (suv.getWeight() <= weight) {
                 filteredList.add(suv);
             }
         }
@@ -97,10 +98,10 @@ public class Suvlist {
     }
 
     // method to filter Suv objects by year
-    public ArrayList<Suv> filterByYear(String year) {
+    public ArrayList<Suv> filterByYear(int year) {
         ArrayList<Suv> filteredList = new ArrayList<>();
         for (Suv suv : SuvList) {
-            if (suv.getYear().equalsIgnoreCase(year)) {
+            if (Integer.parseInt(suv.getYear()) >= year) {
                 filteredList.add(suv);
             }
         }
@@ -111,7 +112,7 @@ public class Suvlist {
     public ArrayList<Suv> filterBySpeed(int speed) {
         ArrayList<Suv> filteredList = new ArrayList<>();
         for (Suv suv : SuvList) {
-            if (suv.getSpeed() == speed) {
+            if (suv.getSpeed() <= speed) {
                 filteredList.add(suv);
             }
         }
@@ -129,22 +130,12 @@ public class Suvlist {
         return filteredList;
     }
 
-    // method to filter Suv objects by price
-    public ArrayList<Suv> filterByPrice(double price) {
-        ArrayList<Suv> filteredList = new ArrayList<>();
-        for (Suv suv : SuvList) {
-            if (suv.getPrice() <= price) {
-                filteredList.add(suv);
-            }
-        }
-        return filteredList;
-    }
-
     // method to filter Suv objects by name
     public ArrayList<Suv> filterByName(String name) {
         ArrayList<Suv> filteredList = new ArrayList<>();
+        String companyName = name.split(" ")[0];
         for (Suv suv : SuvList) {
-            if (suv.getName().equalsIgnoreCase(name)) {
+            if (suv.getName().toLowerCase().contains(companyName.toLowerCase())) {
                 filteredList.add(suv);
             }
         }
@@ -156,28 +147,6 @@ public class Suvlist {
         ArrayList<Suv> filteredList = new ArrayList<>();
         for (Suv suv : SuvList) {
             if (suv.getSalePrice() <= salePrice) {
-                filteredList.add(suv);
-            }
-        }
-        return filteredList;
-    }
-
-    // method to filter all Sedan objects greater than a given price
-    public ArrayList<Suv> filterGreaterThanPrice(double price) {
-        ArrayList<Suv> filteredList = new ArrayList<>();
-        for (Suv suv : SuvList) {
-            if (suv.getPrice() > price) {
-                filteredList.add(suv);
-            }
-        }
-        return filteredList;
-    }
-
-    // method to filter all Sedan objects less than a given price
-    public ArrayList<Suv> filterLessThanPrice(double price) {
-        ArrayList<Suv> filteredList = new ArrayList<>();
-        for (Suv suv : SuvList) {
-            if (suv.getPrice() < price) {
                 filteredList.add(suv);
             }
         }

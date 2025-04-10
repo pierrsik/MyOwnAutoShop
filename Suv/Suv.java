@@ -1,3 +1,5 @@
+package Suv;
+
 public class Suv extends Car {
     private int weight;
     private int id;

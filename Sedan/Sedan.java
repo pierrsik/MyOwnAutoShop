@@ -1,3 +1,5 @@
+package Sedan;
+
 public class Sedan extends Car {
     private double manafacturerDiscount;
     private int id;
@@ -16,7 +18,7 @@ public class Sedan extends Car {
     }
 
     public double getSalePrice() {
-        double salePrice = getPrice() - manafacturerDiscount;
+        double salePrice = this.getPrice() - manafacturerDiscount;
         return salePrice;
     }
 

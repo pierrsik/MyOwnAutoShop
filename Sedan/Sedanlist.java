@@ -1,18 +1,33 @@
+package Sedan;
 
 //houses all the created Sedan instances
 import java.util.ArrayList;
 
 public class Sedanlist {
     private ArrayList<Sedan> SedanList = new ArrayList<>();
+    private ArrayList<Sedan> filteredData = new ArrayList<>();
 
     // method to add a Sedan object to the list
     public void addSedan(Sedan sedan) {
         SedanList.add(sedan);
     }
 
+    public ArrayList<Sedan> getFilteredData() {
+        return filteredData;
+    }
+
     // method to get the list of Sedan objects
     public ArrayList<Sedan> getSedanList() {
         return SedanList;
+    }
+
+    // display the Sedan
+    public void displaySedan(ArrayList<Sedan> sedanList) {
+        for (Sedan sedan : SedanList) {
+            System.out.println(sedan.getName());
+            System.out.println(sedan.getPrice());
+            System.out.println(sedan.getSalePrice());
+        }
     }
 
     // method to set the list of Sedan objects
@@ -121,14 +136,15 @@ public class Sedanlist {
     }
 
     // method to filter Sedan objects by name
-    public ArrayList<Sedan> filterByName(String name) {
+    public void filterByName(String name) {
         ArrayList<Sedan> filteredList = new ArrayList<>();
+        String companyName = name.split(" ")[0];
         for (Sedan sedan : SedanList) {
-            if (sedan.getName().equalsIgnoreCase(name)) {
+            if (sedan.getName().toLowerCase().contains(companyName.toLowerCase())) {
                 filteredList.add(sedan);
             }
         }
-        return filteredList;
+        filteredData = filteredList;
     }
 
     // method to filter Sedan objects by sale price
