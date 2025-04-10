@@ -142,10 +142,16 @@ public class Sedanlist {
     // method to filter Sedan objects by name
     public void filterByName(String name) {
         ArrayList<Sedan> filteredList = new ArrayList<>();
+
         for (Sedan sedan : SedanList) {
+            System.out.println("Inside for loop: " + sedan.getName());
             if (sedan.getName().toLowerCase().contains(name.toLowerCase())) {
+                System.out.println("Inside if condition: " + sedan.getName());
                 filteredList.add(sedan);
             }
+        }
+        if (filteredList.isEmpty()) {
+            System.out.println("No Sedans found with the name: " + name);
         }
         filteredData = filteredList;
     }

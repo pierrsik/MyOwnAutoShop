@@ -7,7 +7,7 @@ import sedan.Sedanlist;
 public class SedanSearchInterface {
     public static String bullet = "\u2022";
 
-    public static void searchOption() {
+    public static void searchOption(Sedanlist sedanList) {
         try (Scanner sc = new Scanner(System.in)) {
             System.out.println("=======|| Search for Sedan ||=======" + "\n" +
                     "|| 1. Search by company name     ||" + "\n" +
@@ -20,7 +20,6 @@ public class SedanSearchInterface {
             System.out.print("\t" + bullet + " Enter the option for Sedan: ");
             int key = sc.nextInt();
             sc.nextLine();
-            Sedanlist sedanlist = new Sedanlist();
             switch (key) {
                 case 1:
                     System.out.print("\t" + bullet + " Enter the sedan's Company name: ");

@@ -91,7 +91,7 @@ public class SedanInterface {
                     sedanlist.displaySedan(sedanlist.getSedanList());
                     break;
                 case 3:
-                    SedanSearchInterface.searchOption();
+                    SedanSearchInterface.searchOption(sedanList);
                     break;
                 case 4:
                     System.out.print("\t" + bullet + " Give the name of the car you want to remove: ");
