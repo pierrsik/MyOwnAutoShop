@@ -74,119 +74,69 @@ public class Sedanlist {
     }
 
     // method to filter Sedan objects by color
-    public ArrayList<Sedan> filterByColor(String color) {
+    public void filterByColor(String color) {
         ArrayList<Sedan> filteredList = new ArrayList<>();
         for (Sedan sedan : SedanList) {
             if (sedan.getColor().equalsIgnoreCase(color)) {
                 filteredList.add(sedan);
             }
         }
-        return filteredList;
+        filteredData = filteredList;
     }
 
     // method to filter Sedan objects by fuel type
-    public ArrayList<Sedan> filterByFuelType(String fuelType) {
+    public void filterByFuelType(String fuelType) {
         ArrayList<Sedan> filteredList = new ArrayList<>();
         for (Sedan sedan : SedanList) {
             if (sedan.getFuelType().equalsIgnoreCase(fuelType)) {
                 filteredList.add(sedan);
             }
         }
-        return filteredList;
+        filteredData = filteredList;
     }
 
     // method to filter Sedan objects by year
-    public ArrayList<Sedan> filterByYear(String year) {
+    public void filterByYear(String year) {
         ArrayList<Sedan> filteredList = new ArrayList<>();
         for (Sedan sedan : SedanList) {
             if (sedan.getYear().equalsIgnoreCase(year)) {
                 filteredList.add(sedan);
             }
         }
-        return filteredList;
-    }
-
-    // method to filter Sedan objects by mileage
-    public ArrayList<Sedan> filterByMileage(double mileage) {
-        ArrayList<Sedan> filteredList = new ArrayList<>();
-        for (Sedan sedan : SedanList) {
-            if (sedan.getMileage() <= mileage) {
-                filteredList.add(sedan);
-            }
-        }
-        return filteredList;
-    }
-
-    // method to filter Sedan objects by price
-    public ArrayList<Sedan> filterByPrice(double price) {
-        ArrayList<Sedan> filteredList = new ArrayList<>();
-        for (Sedan sedan : SedanList) {
-            if (sedan.getPrice() <= price) {
-                filteredList.add(sedan);
-            }
-        }
-        return filteredList;
+        filteredData = filteredList;
     }
 
     // method to filter Sedan objects by speed
-    public ArrayList<Sedan> filterBySpeed(int speed) {
+    public void filterBySpeed(double speed) {
         ArrayList<Sedan> filteredList = new ArrayList<>();
         for (Sedan sedan : SedanList) {
             if (sedan.getSpeed() <= speed) {
                 filteredList.add(sedan);
             }
         }
-        return filteredList;
+        filteredData = filteredList;
     }
 
     // method to filter Sedan objects by name
     public void filterByName(String name) {
         ArrayList<Sedan> filteredList = new ArrayList<>();
-
         for (Sedan sedan : SedanList) {
-            System.out.println("Inside for loop: " + sedan.getName());
             if (sedan.getName().toLowerCase().contains(name.toLowerCase())) {
-                System.out.println("Inside if condition: " + sedan.getName());
                 filteredList.add(sedan);
             }
-        }
-        if (filteredList.isEmpty()) {
-            System.out.println("No Sedans found with the name: " + name);
         }
         filteredData = filteredList;
     }
 
     // method to filter Sedan objects by sale price
-    public ArrayList<Sedan> filterBySalePrice(double salePrice) {
+    public void filterBySalePrice(double salePrice) {
         ArrayList<Sedan> filteredList = new ArrayList<>();
         for (Sedan sedan : SedanList) {
             if (sedan.getSalePrice() <= salePrice) {
                 filteredList.add(sedan);
             }
         }
-        return filteredList;
-    }
-
-    // method to filter all Sedan objects greater than a given price
-    public ArrayList<Sedan> filterGreaterThanPrice(double price) {
-        ArrayList<Sedan> filteredList = new ArrayList<>();
-        for (Sedan sedan : SedanList) {
-            if (sedan.getPrice() > price) {
-                filteredList.add(sedan);
-            }
-        }
-        return filteredList;
-    }
-
-    // method to filter all Sedan objects less than a given price
-    public ArrayList<Sedan> filterLessThanPrice(double price) {
-        ArrayList<Sedan> filteredList = new ArrayList<>();
-        for (Sedan sedan : SedanList) {
-            if (sedan.getPrice() < price) {
-                filteredList.add(sedan);
-            }
-        }
-        return filteredList;
+        filteredData = filteredList;
     }
 
 }

@@ -103,7 +103,7 @@ public class Validation {
         }
     }
 
-    public boolean validateManafacturerDiscount(double manafacturerDiscount) {
+    public boolean validateManufacturerDiscount(double manafacturerDiscount) {
         double minManafacturerDiscount = 0.0;
         double maxManafacturerDiscount = 20000.0;
         if (manafacturerDiscount < minManafacturerDiscount) {

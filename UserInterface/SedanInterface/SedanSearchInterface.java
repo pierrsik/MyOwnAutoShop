@@ -5,10 +5,10 @@ import java.util.Scanner;
 import sedan.Sedanlist;
 
 public class SedanSearchInterface {
-    public static String bullet = "\u2022";
 
-    public static void searchOption(Sedanlist sedanList) {
-        try (Scanner sc = new Scanner(System.in)) {
+    public static void searchOption(Sedanlist sedanlist, Scanner sc) {
+        boolean searchCondition = false;
+        while (!searchCondition) {
             System.out.println("=======|| Search for Sedan ||=======" + "\n" +
                     "|| 1. Search by company name     ||" + "\n" +
                     "|| 2. Search by Sedan color      ||" + "\n" +
@@ -16,23 +16,62 @@ public class SedanSearchInterface {
                     "|| 4. Search by year             ||" + "\n" +
                     "|| 5. Search by min Speed        ||" + "\n" +
                     "|| 6. Search by sales Price      ||" + "\n" +
+                    "|| 7. Return Back                ||" + "\n" +
                     "==================================" + "\n");
-            System.out.print("\t" + bullet + " Enter the option for Sedan: ");
+            System.out.print("\t Enter the option for Sedan: ");
             int key = sc.nextInt();
             sc.nextLine();
             switch (key) {
                 case 1:
-                    System.out.print("\t" + bullet + " Enter the sedan's Company name: ");
+                    System.out.print("\t Enter the sedan's Company name: ");
                     String companyName = sc.nextLine();
                     sedanlist.filterByName(companyName);
                     sedanlist.displaySedan(sedanlist.getFilteredData());
                     break;
 
+                case 2:
+                    String color = sc.nextLine();
+                    sedanlist.filterByColor(color);
+                    sedanlist.displaySedan(sedanlist.getFilteredData());
+                    break;
+
+                case 3:
+                    System.out.print("\t Enter the sedan's fuel type: ");
+                    String fuelType = sc.nextLine();
+                    sedanlist.filterByFuelType(fuelType);
+                    sedanlist.displaySedan(sedanlist.getFilteredData());
+                    break;
+
+                case 4:
+                    System.out.print("\t Enter the sedan's year: ");
+                    String year = sc.nextLine();
+                    sedanlist.filterByYear(year);
+                    sedanlist.displaySedan(sedanlist.getFilteredData());
+                    break;
+
+                case 5:
+                    System.out.print("\t Enter the sedan's minimum speed: ");
+                    double minSpeed = sc.nextDouble();
+                    sc.nextLine();
+                    sedanlist.filterBySpeed(minSpeed);
+                    sedanlist.displaySedan(sedanlist.getFilteredData());
+                    break;
+
+                case 6:
+                    System.out.print("\t Enter the sedan's sales price: ");
+                    double salesPrice = sc.nextDouble();
+                    sc.nextLine();
+                    sedanlist.filterBySalePrice(salesPrice);
+                    sedanlist.displaySedan(sedanlist.getFilteredData());
+                    break;
+
+                case 7:
+                    searchCondition = true;
+                    break;
+
                 default:
                     break;
             }
-        } catch (Exception e) {
-            System.out.println("Invalid input. Please try again.");
         }
     }
 }

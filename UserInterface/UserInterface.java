@@ -8,8 +8,6 @@ import userInterface.suvInterface.SuvInterface;
 
 public class UserInterface {
 
-    public static String bullet = "\u2022";
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         boolean isValidCondition = false;
@@ -20,7 +18,7 @@ public class UserInterface {
                     "|| 2. Sedan option             ||" + "\n" +
                     "|| 3. Exit                     ||" + "\n" +
                     "=+============================+=");
-            System.out.print(bullet + " Enter Your choice: ");
+            System.out.print("* Enter Your choice: ");
             try {
                 if (sc.hasNextInt()) {
                     int option = sc.nextInt();
@@ -31,7 +29,7 @@ public class UserInterface {
                             SuvInterface.suvOptions();
                             break;
                         case 2:
-                            SedanInterface.sedanOptions();
+                            SedanInterface.sedanOptions(sc);
                             break;
                         case 3:
                             isValidCondition = true;
@@ -42,14 +40,12 @@ public class UserInterface {
                     }
                 } else {
                     System.out.println("Invalid input. Please enter a number.");
-                    sc.nextLine(); // Consume the invalid input
                 }
+
             } catch (NoSuchElementException e) {
                 System.out.println("No input provided. Please try again.");
-                sc.nextLine(); // Clear the scanner buffer
             } catch (Exception e) {
                 System.out.println("An unexpected error occurred: " + e.getMessage());
-                sc.nextLine(); // Clear the scanner buffer
             }
         }
 
