@@ -95,6 +95,7 @@ public class SuvInterface {
                     System.out.print("\t" + bullet + " Give the name of the car you want to remove: ");
                     String carName = sc.nextLine();
                     suvlist.removeSuvByName(carName);
+                    break;
                 case 5:
                     isValidCondition = true;
                     break;

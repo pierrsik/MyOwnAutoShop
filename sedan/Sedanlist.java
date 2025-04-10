@@ -23,6 +23,10 @@ public class Sedanlist {
 
     // display the Sedan
     public void displaySedan(ArrayList<Sedan> sedanList) {
+        if (sedanList == null || sedanList.isEmpty()) {
+            System.out.println("No Sedans available.");
+            return;
+        }
         for (Sedan sedan : SedanList) {
             System.out.println(sedan.getName());
             System.out.println(sedan.getPrice());
@@ -138,9 +142,8 @@ public class Sedanlist {
     // method to filter Sedan objects by name
     public void filterByName(String name) {
         ArrayList<Sedan> filteredList = new ArrayList<>();
-        String companyName = name.split(" ")[0];
         for (Sedan sedan : SedanList) {
-            if (sedan.getName().toLowerCase().contains(companyName.toLowerCase())) {
+            if (sedan.getName().toLowerCase().contains(name.toLowerCase())) {
                 filteredList.add(sedan);
             }
         }

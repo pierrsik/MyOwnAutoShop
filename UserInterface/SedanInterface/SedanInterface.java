@@ -54,7 +54,7 @@ public class SedanInterface {
             return;
         }
 
-        System.out.print("\t" + bullet + " Enter the manafacturer Discount of the SUV: ");
+        System.out.print("\t" + bullet + " Enter the manufacturer Discount of the Sedan: ");
         int manafacturerDiscount = sc.nextInt();
         sc.nextLine();
         if (!v.validateManafacturerDiscount(manafacturerDiscount)) {
@@ -96,7 +96,9 @@ public class SedanInterface {
                 case 4:
                     System.out.print("\t" + bullet + " Give the name of the car you want to remove: ");
                     String carName = sc.nextLine();
+                    sc.nextLine();
                     sedanlist.removeSedanByName(carName);
+                    break;
                 case 5:
                     isValidCondition = true;
                     break;
