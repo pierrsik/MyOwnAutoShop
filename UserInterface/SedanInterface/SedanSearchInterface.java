@@ -33,5 +33,7 @@ public class SedanSearchInterface {
             default:
                 break;
         }
+
+        sc.close();
     }
 }
