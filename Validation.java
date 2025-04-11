@@ -9,11 +9,11 @@ public class Validation {
                     "brown"));
 
     public boolean validateSpeed(int speed) {
-        if (speed < 0) {
-            System.out.println("Speed can not be negative");
+        if (speed < 80) {
+            System.out.println("Speed must be atleast 80 km/h");
             return false;
         } else if (speed > 250) {
-            System.out.println("Speed must be less than 250");
+            System.out.println("Speed must be less than 250km/h");
             return false;
         } else {
             return true;
@@ -61,10 +61,10 @@ public class Validation {
     }
 
     public boolean validateMileage(double mileage) {
-        double minMileage = 0.0;
+        double minMileage = 10.0;
         double maxMileage = 50.0;
         if (mileage < minMileage) {
-            System.out.println("Mileage must not be negative");
+            System.out.println("Mileage must be atleast 10 km/l");
             return false;
         } else if (mileage > maxMileage) {
             System.out.println("Mileage must be reasonable");

@@ -1,5 +1,4 @@
 
-
 import java.util.Scanner;
 
 public class SuvInterface {
@@ -32,11 +31,11 @@ public class SuvInterface {
             color = sc.nextLine();
         }
 
-        System.out.print("\t* Enter the mileage of the SUV(0-50): ");
+        System.out.print("\t* Enter the mileage of the SUV(10-50 km/l): ");
         double mileage = sc.nextDouble();
         sc.nextLine();
         while (!v.validateMileage(mileage)) {
-            System.out.print("\t* Enter the mileage of the SUV(0-50): ");
+            System.out.print("\t* Enter the mileage of the SUV(10-50 km/l): ");
             mileage = sc.nextDouble();
             sc.nextLine();
         }
@@ -73,13 +72,13 @@ public class SuvInterface {
         Validation validation = new Validation();
         Suvlist suvlist = new Suvlist();
         while (!isValidCondition) {
-            System.out.println("\t\t\t"+"===========||SUV||=============" + "\n" +
-                               "\t\t\t"+"|| 1. Add SUV details        ||" + "\n" + //
-                               "\t\t\t"+"|| 2. View SUVs              ||" + "\n" +
-                               "\t\t\t"+"|| 3. Search SUV             ||" + "\n" +
-                               "\t\t\t"+"|| 4. Remove SUV             ||" + "\n" +
-                               "\t\t\t"+"|| 5. Return to main menu    ||" + "\n" +
-                               "\t\t\t"+"==============================");
+            System.out.println("\t\t\t" + "===========||SUV||=============" + "\n" +
+                    "\t\t\t" + "|| 1. Add SUV details        ||" + "\n" + //
+                    "\t\t\t" + "|| 2. View SUVs              ||" + "\n" +
+                    "\t\t\t" + "|| 3. Search SUV             ||" + "\n" +
+                    "\t\t\t" + "|| 4. Remove SUV             ||" + "\n" +
+                    "\t\t\t" + "|| 5. Return to main menu    ||" + "\n" +
+                    "\t\t\t" + "==============================");
             System.out.print("Enter Your choice for SUV: ");
             int SUVoption = sc.nextInt();
             sc.nextLine();

@@ -30,11 +30,11 @@ public class SedanInterface {
             color = sc.nextLine();
         }
 
-        System.out.print("\t" + "* Enter the mileage of the Sedan(0-50): ");
+        System.out.print("\t" + "* Enter the mileage of the Sedan(10-50 km/l): ");
         double mileage = sc.nextDouble();
         sc.nextLine();
         while (!v.validateMileage(mileage)) {
-            System.out.print("\t" + "* Enter the mileage of the Sedan(0-50): ");
+            System.out.print("\t" + "* Enter the mileage of the Sedan(10-50 km/l): ");
             mileage = sc.nextDouble();
             sc.nextLine();
         }
