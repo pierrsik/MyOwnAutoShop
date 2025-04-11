@@ -1,12 +1,12 @@
 
-
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Validation {
 
     private static ArrayList<String> validColors = new ArrayList<>(
-            Arrays.asList("red", "blue", "white", "grey", "black","green", "yellow", "purple", "orange", "pink", "brown"));
+            Arrays.asList("red", "blue", "white", "grey", "black", "green", "yellow", "purple", "orange", "pink",
+                    "brown"));
 
     public boolean validateSpeed(int speed) {
         if (speed < 0) {
@@ -105,7 +105,7 @@ public class Validation {
 
     public boolean validateManufacturerDiscount(double manafacturerDiscount) {
         double minManafacturerDiscount = 0.0;
-        double maxManafacturerDiscount = 20000.0;
+        double maxManafacturerDiscount = 100000.0;
         if (manafacturerDiscount < minManafacturerDiscount) {
             System.out.println("Discount can not be negative");
             return false;

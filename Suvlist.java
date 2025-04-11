@@ -11,43 +11,43 @@ public class Suvlist {
         // empty constructor
         Suv suv1 = new Suv("Toyota RAV4", 220, 3500000, "Red", 25.0, "petrol", "2023", 1500);
         SuvList.add(suv1);
-        Suv suv2 = new Suv("Honda CR-V", 200, 2200000, "Blue", 22.0, "diesel", "2022", 1600); 
+        Suv suv2 = new Suv("Honda CR-V", 200, 2200000, "Blue", 22.0, "diesel", "2022", 1600);
         SuvList.add(suv2);
-        Suv suv3 = new Suv("Ford Explorer", 240, 1200000, "Black", 20.0, "petrol", "2021", 1700);   
+        Suv suv3 = new Suv("Ford Explorer", 240, 1200000, "Black", 20.0, "petrol", "2021", 1700);
         SuvList.add(suv3);
-        Suv suv4 = new Suv("Chevrolet Tahoe", 230, 2800000, "White", 18.0, "diesel", "2020", 1800); 
+        Suv suv4 = new Suv("Chevrolet Tahoe", 230, 2800000, "White", 18.0, "diesel", "2020", 1800);
         SuvList.add(suv4);
-        Suv suv5 = new Suv("Nissan Rogue", 210, 3200000, "Grey", 24.0, "petrol", "2019", 1400); 
+        Suv suv5 = new Suv("Nissan Rogue", 210, 3200000, "Grey", 24.0, "petrol", "2019", 1400);
         SuvList.add(suv5);
-        Suv suv6 = new Suv("Hyundai Tucson", 220, 3000000, "Red", 26.0, "diesel", "2023", 1500);    
+        Suv suv6 = new Suv("Hyundai Tucson", 220, 3000000, "Red", 26.0, "diesel", "2023", 1500);
         SuvList.add(suv6);
-        Suv suv7 = new Suv("Kia Sportage", 200, 2900000, "Blue", 23.0, "petrol", "2022", 1600); 
+        Suv suv7 = new Suv("Kia Sportage", 200, 2900000, "Blue", 23.0, "petrol", "2022", 1600);
         SuvList.add(suv7);
         Suv suv8 = new Suv("Subaru Forester", 240, 3600000, "Black", 21.0, "diesel", "2021", 1700);
         SuvList.add(suv8);
-        Suv suv9 = new Suv("Mazda CX-5", 230, 2000000, "White", 19.0, "petrol", "2020", 1800);  
+        Suv suv9 = new Suv("Mazda CX-5", 230, 2000000, "White", 19.0, "petrol", "2020", 1800);
         SuvList.add(suv9);
         Suv suv10 = new Suv("Volkswagen Tiguan", 210, 1100000, "Grey", 27.0, "diesel", "2019", 1400);
         SuvList.add(suv10);
-        Suv suv11 = new Suv("Jeep Grand Cherokee", 220, 3000000, "Red", 28.0, "petrol", "2023", 1500);  
+        Suv suv11 = new Suv("Jeep Grand Cherokee", 220, 3000000, "Red", 28.0, "petrol", "2023", 1500);
         SuvList.add(suv11);
-        Suv suv12 = new Suv("Dodge Durango", 200, 3300000, "Blue", 25.0, "diesel", "2022", 1600);   
+        Suv suv12 = new Suv("Dodge Durango", 200, 3300000, "Blue", 25.0, "diesel", "2022", 1600);
         SuvList.add(suv12);
-        Suv suv13 = new Suv("Toyota Highlander", 240, 2300000, "Black", 24.0, "petrol", "2021", 1700);  
+        Suv suv13 = new Suv("Toyota Highlander", 240, 2300000, "Black", 24.0, "petrol", "2021", 1700);
         SuvList.add(suv13);
-        Suv suv14 = new Suv("Honda Pilot", 230, 2300000, "White", 22.0, "diesel", "2020", 1800);    
+        Suv suv14 = new Suv("Honda Pilot", 230, 2300000, "White", 22.0, "diesel", "2020", 1800);
         SuvList.add(suv14);
         Suv suv15 = new Suv("Ford Escape", 210, 2000000, "Grey", 26.0, "petrol", "2019", 1400);
         SuvList.add(suv15);
-        Suv suv16 = new Suv("TATA Harrier", 220, 1600000, "Red", 25.0, "diesel", "2023", 1500); 
+        Suv suv16 = new Suv("TATA Harrier", 220, 1600000, "Red", 25.0, "diesel", "2023", 1500);
         SuvList.add(suv16);
-        Suv suv17 = new Suv("Mahindra XUV700", 200, 2000000, "Blue", 22.0, "petrol", "2022", 1600); 
+        Suv suv17 = new Suv("Mahindra XUV700", 200, 2000000, "Blue", 22.0, "petrol", "2022", 1600);
         SuvList.add(suv17);
-        Suv suv18 = new Suv("Kia Seltos", 240, 1200000, "Black", 20.0, "diesel", "2021", 1700); 
+        Suv suv18 = new Suv("Kia Seltos", 240, 1200000, "Black", 20.0, "diesel", "2021", 1700);
         SuvList.add(suv18);
-        Suv suv19 = new Suv("Hyundai Creta", 230, 1000000, "White", 18.0, "petrol", "2020", 1800);  
+        Suv suv19 = new Suv("Hyundai Creta", 230, 1000000, "White", 18.0, "petrol", "2020", 1800);
         SuvList.add(suv19);
-        Suv suv20 = new Suv("TATA Nexon", 210, 800000, "Grey", 24.0, "diesel", "2019", 1400); 
+        Suv suv20 = new Suv("TATA Nexon", 210, 800000, "Grey", 24.0, "diesel", "2019", 1400);
         SuvList.add(suv20);
     }
 
@@ -67,7 +67,7 @@ public class Suvlist {
         }
         // Print table header
         // Print table header
-        String border = "-".repeat(150);
+        String border = "-".repeat(129);
         System.out.println(border);
         System.out.println(border);
         System.out.printf("| %-6s | %-20s | %-6s | %-10s | %-8s | %-10s | %-6s | %-12s | %-8s | %-12s |\n",
@@ -83,7 +83,7 @@ public class Suvlist {
 
         // Print table footer
         System.out.println(border);
-        
+
     }
 
     // method to get the list of Suv objects
