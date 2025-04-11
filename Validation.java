@@ -105,7 +105,7 @@ public class Validation {
 
     public boolean validateManufacturerDiscount(double manafacturerDiscount) {
         double minManafacturerDiscount = 0.0;
-        double maxManafacturerDiscount = 100000.0;
+        double maxManafacturerDiscount = 20.0;
         if (manafacturerDiscount < minManafacturerDiscount) {
             System.out.println("Discount can not be negative");
             return false;

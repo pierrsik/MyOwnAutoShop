@@ -20,7 +20,7 @@ public class Suv extends Car {
             String year,
             int weight) {
         super(name, speed, price, color, "Suv", mileage, fuelType, year);
-        this.id = Suv.idCount++;
+        this.id = ++Suv.idCount;
         this.weight = weight;
     }
 

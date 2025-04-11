@@ -1,5 +1,4 @@
 
-
 import java.util.Scanner;
 
 public class SedanInterface {
@@ -54,11 +53,11 @@ public class SedanInterface {
             year = sc.nextLine();
         }
 
-        System.out.print("\t" + "* Enter the manufacturer Discount of the Sedan(max: 20000): ");
+        System.out.print("\t" + "* Enter the manufacturer Discount of the Sedan(in %): ");
         int manufacturerDiscount = sc.nextInt();
         sc.nextLine();
         while (!v.validateManufacturerDiscount(manufacturerDiscount)) {
-            System.out.print("\t" + "* Enter the manufacturer Discount of the Sedan(max: 20000): ");
+            System.out.print("\t" + "* Enter the manufacturer Discount of the Sedan(in %): ");
             manufacturerDiscount = sc.nextInt();
             sc.nextLine();
         }
@@ -72,13 +71,13 @@ public class SedanInterface {
         Validation validation = new Validation();
         Sedanlist sedanlist = new Sedanlist();
         while (!isValidCondition) {
-            System.out.println("\t\t\t"+"==========||Sedan||============" + "\n" +
-                               "\t\t\t"+"|| 1. Add Sedan details      ||" + "\n" +
-                               "\t\t\t"+"|| 2. View Sedans            ||" + "\n" +
-                               "\t\t\t"+"|| 3. Search Sedan           ||" + "\n" +
-                               "\t\t\t"+"|| 4. Remove Sedan           ||" + "\n" +
-                               "\t\t\t"+"|| 5. Return to main menu    ||" + "\n" +
-                               "\t\t\t"+"==============================");
+            System.out.println("\t\t\t" + "==========||Sedan||============" + "\n" +
+                    "\t\t\t" + "|| 1. Add Sedan details      ||" + "\n" +
+                    "\t\t\t" + "|| 2. View Sedans            ||" + "\n" +
+                    "\t\t\t" + "|| 3. Search Sedan           ||" + "\n" +
+                    "\t\t\t" + "|| 4. Remove Sedan           ||" + "\n" +
+                    "\t\t\t" + "|| 5. Return to main menu    ||" + "\n" +
+                    "\t\t\t" + "==============================");
             System.out.print("Enter Your choice for Sedan: ");
             int Sedanoption = sc.nextInt();
             sc.nextLine();
@@ -97,7 +96,6 @@ public class SedanInterface {
                 case 4:
                     System.out.print("\t" + "* Give the name of the car you want to remove: ");
                     String carName = sc.nextLine();
-                    sc.nextLine();
                     sedanlist.removeSedanByName(carName);
                     System.out.println("|| Sedan removed successfully ||");
                     break;

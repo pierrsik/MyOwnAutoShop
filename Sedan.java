@@ -16,7 +16,7 @@ public class Sedan extends Car {
     }
 
     public double getSalePrice() {
-        double salePrice = this.getPrice() - manufacturerDiscount;
+        double salePrice = this.getPrice() - (this.getPrice() * (manufacturerDiscount / 100));
         return salePrice;
     }
 
@@ -24,7 +24,7 @@ public class Sedan extends Car {
     public Sedan(String name, int speed, double price, String color, double mileage, String fuelType,
             String year, double manafacturerDiscount) {
         super(name, speed, price, color, "Sedan", mileage, fuelType, year);
-        this.id = Sedan.idCount++;
+        this.id = ++Sedan.idCount;
         this.manufacturerDiscount = manafacturerDiscount;
     }
 }

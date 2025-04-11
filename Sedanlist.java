@@ -8,46 +8,46 @@ public class Sedanlist {
 
     public Sedanlist() {
         // Constructor
-        Sedan sedan1 = new Sedan("Toyota Camry", 220, 480000, "blue", 26, "petrol", "2020", 15000);
+        Sedan sedan1 = new Sedan("Toyota Camry", 220, 480000, "blue", 26, "petrol", "2020", 15);
         SedanList.add(sedan1);
-        Sedan sedan2 = new Sedan("Honda city amaze", 180, 450000, "red", 20, "diesel", "2021", 20000);
+        Sedan sedan2 = new Sedan("Honda city amaze", 180, 450000, "red", 20, "diesel", "2021", 20);
         SedanList.add(sedan2);
-        Sedan sedan3 = new Sedan("Hyundai Verna", 200, 600000, "black", 22, "petrol", "2022", 12000);
+        Sedan sedan3 = new Sedan("Hyundai Verna", 200, 600000, "black", 22, "petrol", "2022", 12);
         SedanList.add(sedan3);
-        Sedan sedan4 = new Sedan("Skoda Octavia", 240, 600000, "white", 18, "diesel", "2023", 25000);
+        Sedan sedan4 = new Sedan("Skoda Octavia", 240, 600000, "white", 18, "diesel", "2023", 13);
         SedanList.add(sedan4);
-        Sedan sedan5 = new Sedan("Nissan Altima", 210, 1000000, "grey", 24, "petrol", "2024", 30000);
+        Sedan sedan5 = new Sedan("Nissan Altima", 210, 1000000, "grey", 24, "petrol", "2024", 5);
         SedanList.add(sedan5);
-        Sedan sedan6 = new Sedan("Kia K5", 230, 700000, "blue", 28, "diesel", "2025", 35000);
+        Sedan sedan6 = new Sedan("Kia K5", 230, 700000, "blue", 28, "diesel", "2025", 17);
         SedanList.add(sedan6);
-        Sedan sedan7 = new Sedan("Mazda 6", 220, 700000, "red", 25, "petrol", "2021", 40000);
+        Sedan sedan7 = new Sedan("Mazda 6", 220, 700000, "red", 25, "petrol", "2021", 12);
         SedanList.add(sedan7);
-        Sedan sedan8 = new Sedan("Subaru Legacy", 200, 650000, "black", 23, "diesel", "2020", 45000);
+        Sedan sedan8 = new Sedan("Subaru Legacy", 200, 650000, "black", 23, "diesel", "2020", 9);
         SedanList.add(sedan8);
-        Sedan sedan9 = new Sedan("Tata Yaris", 180, 550000, "white", 21, "petrol", "2024", 50000);
+        Sedan sedan9 = new Sedan("Tata Yaris", 180, 550000, "white", 21, "petrol", "2024", 8);
         SedanList.add(sedan9);
 
-        Sedan sedan10 = new Sedan("Chevrolet Malibu", 210, 5400000, "grey", 29, "diesel", "2019", 45000);
+        Sedan sedan10 = new Sedan("Chevrolet Malibu", 210, 5400000, "grey", 29, "diesel", "2019", 12);
         SedanList.add(sedan10);
-        Sedan sedan11 = new Sedan("Ford Fusion", 220, 5700000, "blue", 30, "petrol", "2021", 40000);
+        Sedan sedan11 = new Sedan("Ford Fusion", 220, 5700000, "blue", 30, "petrol", "2021", 16);
         SedanList.add(sedan11);
-        Sedan sedan12 = new Sedan("Chrysler 300", 240, 6000000, "red", 31, "diesel", "2019", 45000);
+        Sedan sedan12 = new Sedan("Chrysler 300", 240, 6000000, "red", 31, "diesel", "2019", 18);
         SedanList.add(sedan12);
-        Sedan sedan13 = new Sedan("Mahindra XUV300", 200, 100000, "black", 32, "petrol", "2018", 10000);
+        Sedan sedan13 = new Sedan("Mahindra XUV300", 200, 100000, "black", 32, "petrol", "2018", 13);
         SedanList.add(sedan13);
-        Sedan sedan14 = new Sedan("TATA Tiago", 180, 500000, "white", 33, "diesel", "2022", 75000);
+        Sedan sedan14 = new Sedan("TATA Tiago", 180, 500000, "white", 33, "diesel", "2022", 17);
         SedanList.add(sedan14);
-        Sedan sedan15 = new Sedan("Maruti Suzuki Dzire", 210, 550000, "grey", 34, "petrol", "2022", 30000);
+        Sedan sedan15 = new Sedan("Maruti Suzuki Dzire", 210, 550000, "grey", 34, "petrol", "2022", 14);
         SedanList.add(sedan15);
-        Sedan sedan16 = new Sedan("Honda Accord", 220, 600000, "blue", 35, "diesel", "2023", 35000);
+        Sedan sedan16 = new Sedan("Honda Accord", 220, 600000, "blue", 35, "diesel", "2023", 13);
         SedanList.add(sedan16);
-        Sedan sedan17 = new Sedan("Toyota Corolla", 240, 650000, "red", 36, "petrol", "2018", 25000);
+        Sedan sedan17 = new Sedan("Toyota Corolla", 240, 650000, "red", 36, "petrol", "2018", 12);
         SedanList.add(sedan17);
-        Sedan sedan18 = new Sedan("Nissan Sentra", 200, 700000, "black", 37, "diesel", "2019", 28000);
+        Sedan sedan18 = new Sedan("Nissan Sentra", 200, 700000, "black", 37, "diesel", "2019", 16);
         SedanList.add(sedan18);
-        Sedan sedan19 = new Sedan("Skoda Superb", 180, 750000, "white", 38, "petrol", "2020", 40000);
+        Sedan sedan19 = new Sedan("Skoda Superb", 180, 750000, "white", 38, "petrol", "2020", 10);
         SedanList.add(sedan19);
-        Sedan sedan20 = new Sedan("Hundai Aura", 210, 650000, "red", 39, "diesel", "2021", 10000);
+        Sedan sedan20 = new Sedan("Hundai Aura", 210, 650000, "red", 39, "diesel", "2021", 15);
         SedanList.add(sedan20);
     }
 
