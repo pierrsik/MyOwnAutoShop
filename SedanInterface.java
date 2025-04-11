@@ -39,7 +39,7 @@ public class SedanInterface {
             sc.nextLine();
         }
 
-        System.out.print("\t" + " Enter the fuel type of the Sedan(petrol/deisel): ");
+        System.out.print("\t" + "* Enter the fuel type of the Sedan(petrol/deisel): ");
         String fuelType = sc.nextLine();
         while (!v.validateFuelType(fuelType)) {
             System.out.print("\t" + " Enter the fuel type of the Sedan(petrol/deisel): ");

@@ -21,10 +21,10 @@ public class Validation {
     }
 
     public boolean validatePrice(double price) {
-        double minPrice = 0.0;
+        double minPrice = 300000.0;
         double maxPrice = 100000000.0;
         if (price < minPrice) {
-            System.out.println("Price must not be negative");
+            System.out.println("Price must not be less than 3 lakhs");
             return false;
         } else if (price > maxPrice) {
             System.out.println("Price must be reasonable");
@@ -118,8 +118,8 @@ public class Validation {
     }
 
     public boolean validateWeight(int weight) {
-        if (weight <= 0) {
-            System.out.println("Weight must be positive");
+        if (weight <= 600) {
+            System.out.println("Weight must be atleast 6 tons");
             return false;
         } else if (weight > 6000) {
             System.out.println("Weight must be reasonable");

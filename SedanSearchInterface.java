@@ -69,6 +69,7 @@ public class SedanSearchInterface {
                     break;
 
                 default:
+                    System.out.println("|| Invalid option!!!Please try again ||");
                     break;
             }
         }

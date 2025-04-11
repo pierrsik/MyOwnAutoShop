@@ -29,17 +29,18 @@ public class UserInterface {
                             break;
                         case 3:
                             isValidCondition = true;
+                            System.out.println("|| Application Closed Successfully! ||");
                             break;
                         default:
-                            System.out.println("Invalid option. Please try again.");
+                            System.out.println("|| Invalid option. Please try again. ||");
                             break;
                     }
                 } else {
-                    System.out.println("Invalid input. Please enter a number.");
+                    System.out.println("|| Invalid input. Please enter a number. ||");
                 }
 
             } catch (NoSuchElementException e) {
-                System.out.println("No input provided. Please try again.");
+                System.out.println("|| No input provided. Please try again. ||");
             } catch (Exception e) {
                 System.out.println("An unexpected error occurred: " + e.getMessage());
             }
