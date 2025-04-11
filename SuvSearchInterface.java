@@ -1,5 +1,4 @@
 
-
 import java.util.Scanner;
 
 public class SuvSearchInterface {
@@ -47,6 +46,14 @@ public class SuvSearchInterface {
                     System.out.print("\t* Enter the sedan's year: ");
                     String year = sc.nextLine();
                     suvList.filterByYear(year);
+                    suvList.displaySUV(suvList.getFilteredData());
+                    break;
+
+                case 4:
+                    System.out.print("\t* Enter the SUV's weight: ");
+                    int weight = sc.nextInt();
+                    sc.nextLine();
+                    suvList.filterByWeight(weight);
                     suvList.displaySUV(suvList.getFilteredData());
                     break;
 
