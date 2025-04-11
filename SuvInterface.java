@@ -86,6 +86,7 @@ public class SuvInterface {
             switch (SUVoption) {
                 case 1:
                     addSuvIntheList(sc, suvlist, validation);
+                    System.out.println("|| SUV added successfully ||");
                     break;
                 case 2:
                     suvlist.displaySUV(suvlist.getSuvList());
