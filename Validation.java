@@ -10,10 +10,10 @@ public class Validation {
 
     public boolean validateSpeed(int speed) {
         if (speed < 80) {
-            System.out.println("Speed must be atleast 80 km/h");
+            System.err.println("Speed must be atleast 80 km/h");
             return false;
         } else if (speed > 250) {
-            System.out.println("Speed must be less than 250km/h");
+            System.err.println("Speed must be less than 250km/h");
             return false;
         } else {
             return true;
@@ -24,10 +24,10 @@ public class Validation {
         double minPrice = 300000.0;
         double maxPrice = 100000000.0;
         if (price < minPrice) {
-            System.out.println("Price must not be less than 3 lakhs");
+            System.err.println("Price must not be less than 3 lakhs");
             return false;
         } else if (price > maxPrice) {
-            System.out.println("Price must be reasonable");
+            System.err.println("Price must be reasonable");
             return false;
         } else {
             return true;
@@ -37,14 +37,14 @@ public class Validation {
 
     public boolean validateColor(String color) {
         if (color == null || color.isEmpty()) {
-            System.out.println("Color cannot be empty.");
+            System.err.println("Color cannot be empty.");
             return false;
         }
         color = color.toLowerCase();
         if (validColors.contains(color)) {
             return true;
         } else {
-            System.out.println("That color option is not offered");
+            System.err.println("That color option is not offered");
             return false;
         }
 
@@ -53,7 +53,7 @@ public class Validation {
     public boolean validateType(String type) {
         type = type.toLowerCase();
         if (!type.equals("suv") && !type.equals("sedan")) {
-            System.out.println("That type of Car option is not offered");
+            System.err.println("That type of Car option is not offered");
             return false;
         } else {
             return true;
@@ -64,10 +64,10 @@ public class Validation {
         double minMileage = 10.0;
         double maxMileage = 50.0;
         if (mileage < minMileage) {
-            System.out.println("Mileage must be atleast 10 km/l");
+            System.err.println("Mileage must be atleast 10 km/l");
             return false;
         } else if (mileage > maxMileage) {
-            System.out.println("Mileage must be reasonable");
+            System.err.println("Mileage must be reasonable");
             return false;
         } else {
             return true;
@@ -78,7 +78,7 @@ public class Validation {
 
         fuelType = fuelType.toLowerCase();
         if (!fuelType.equals("petrol") && !fuelType.equals("diesel")) {
-            System.out.println("That fuel vehicle is not invented yet!!");
+            System.err.println("That fuel vehicle is not invented yet!!");
             return false;
         } else {
             return true;
@@ -94,11 +94,11 @@ public class Validation {
             if (yearInt >= 1950 && yearInt <= 2025)
                 return true;
             else {
-                System.out.println("Please enter reasonable year value");
+                System.err.println("Please enter reasonable year value");
                 return false;
             }
         } else {
-            System.out.println("Enter valid input");
+            System.err.println("Enter valid input");
             return false;
         }
     }
@@ -107,10 +107,10 @@ public class Validation {
         double minManafacturerDiscount = 0.0;
         double maxManafacturerDiscount = 20.0;
         if (manafacturerDiscount < minManafacturerDiscount) {
-            System.out.println("Discount can not be negative");
+            System.err.println("Discount can not be negative");
             return false;
         } else if (manafacturerDiscount > maxManafacturerDiscount) {
-            System.out.println("Our AutoShop needs to be profitable, please reconsider!");
+            System.err.println("Our AutoShop needs to be profitable, please reconsider!");
             return false;
         } else {
             return true;
@@ -119,10 +119,10 @@ public class Validation {
 
     public boolean validateWeight(int weight) {
         if (weight <= 600) {
-            System.out.println("Weight must be atleast 6 tons");
+            System.err.println("Weight must be atleast 6 tons");
             return false;
         } else if (weight > 6000) {
-            System.out.println("Weight must be reasonable");
+            System.err.println("Weight must be reasonable");
             return false;
         } else {
             return true;

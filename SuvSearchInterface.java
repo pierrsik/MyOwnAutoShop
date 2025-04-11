@@ -78,7 +78,7 @@ public class SuvSearchInterface {
                     break;
 
                 default:
-                    System.out.println("|| Invalid option!!!Please try again ||");
+                    System.err.println("|| Invalid option!!!Please try again ||");
                     break;
             }
         }

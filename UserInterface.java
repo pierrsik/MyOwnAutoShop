@@ -9,11 +9,11 @@ public class UserInterface {
         boolean isValidCondition = false;
 
         while (!isValidCondition) {
-            System.out.println("\t\t\t"+"=+=== Welcome to AutoShop ====+=");
-            System.out.println("\t\t\t"+"|| 1. Suv option               ||" + "\n" +
-                               "\t\t\t"+"|| 2. Sedan option             ||" + "\n" +
-                               "\t\t\t"+"|| 3. Exit                     ||" + "\n" +
-                               "\t\t\t"+"=+============================+=");
+            System.out.println("\t\t\t" + "=+=== Welcome to AutoShop ====+=");
+            System.out.println("\t\t\t" + "|| 1. Suv option               ||" + "\n" +
+                    "\t\t\t" + "|| 2. Sedan option             ||" + "\n" +
+                    "\t\t\t" + "|| 3. Exit                     ||" + "\n" +
+                    "\t\t\t" + "=+============================+=");
             System.out.print("* Enter Your choice: ");
             try {
                 if (sc.hasNextInt()) {
@@ -36,13 +36,13 @@ public class UserInterface {
                             break;
                     }
                 } else {
-                    System.out.println("|| Invalid input. Please enter a number. ||");
+                    System.err.println("|| Invalid input. Please enter a number. ||");
                 }
 
             } catch (NoSuchElementException e) {
-                System.out.println("|| No input provided. Please try again. ||");
+                System.err.println("|| No input provided. Please try again. ||");
             } catch (Exception e) {
-                System.out.println("An unexpected error occurred: " + e.getMessage());
+                System.err.println("An unexpected error occurred: " + e.getMessage());
             }
         }
 
