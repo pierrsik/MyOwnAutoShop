@@ -54,11 +54,11 @@ public class SedanInterface {
         }
 
         System.out.print("\t" + "* Enter the manufacturer Discount of the Sedan(in %): ");
-        int manufacturerDiscount = sc.nextInt();
+        double manufacturerDiscount = sc.nextDouble();
         sc.nextLine();
         while (!v.validateManufacturerDiscount(manufacturerDiscount)) {
             System.out.print("\t" + "* Enter the manufacturer Discount of the Sedan(in %): ");
-            manufacturerDiscount = sc.nextInt();
+            manufacturerDiscount = sc.nextDouble();
             sc.nextLine();
         }
 
