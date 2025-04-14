@@ -79,6 +79,12 @@ public class SedanInterface {
                     "\t\t\t" + "|| 5. Return to main menu    ||" + "\n" +
                     "\t\t\t" + "==============================");
             System.out.print("Enter Your choice for Sedan: ");
+            if (!sc.hasNextInt()) {
+                System.err.println("|| Invalid input. Please enter a number. ||");
+                System.out.println();
+                sc.nextLine(); // Consume the invalid input
+                continue; // Skip to the next iteration of the loop
+            }
             int Sedanoption = sc.nextInt();
             sc.nextLine();
 

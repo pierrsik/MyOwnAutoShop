@@ -16,6 +16,12 @@ public class SedanSearchInterface {
                     "|| 7. Return Back                ||" + "\n" +
                     "==================================" + "\n");
             System.out.print("\t* Enter the option for Sedan: ");
+            if (!sc.hasNextInt()) {
+                System.err.println("|| Invalid input. Please enter a number. ||");
+                System.out.println();
+                sc.nextLine(); // Consume the invalid input
+                continue; // Skip to the next iteration of the loop
+            }
             int key = sc.nextInt();
             sc.nextLine();
             switch (key) {

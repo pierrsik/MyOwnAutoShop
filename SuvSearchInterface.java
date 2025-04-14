@@ -17,6 +17,12 @@ public class SuvSearchInterface {
                     "==================================" + "\n");
 
             System.out.print("\t* Enter the option for SUV: ");
+            if (!sc.hasNextInt()) {
+                System.err.println("|| Invalid input. Please enter a number. ||");
+                System.out.println();
+                sc.nextLine(); // Consume the invalid input
+                continue; // Skip to the next iteration of the loop
+            }
             int key = sc.nextInt();
             sc.nextLine();
 
