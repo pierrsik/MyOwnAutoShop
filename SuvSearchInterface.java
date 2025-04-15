@@ -11,7 +11,7 @@ public class SuvSearchInterface {
                     "|| 3. Search by Fuel Type        ||" + "\n" +
                     "|| 4. Search by Weight           ||" + "\n" +
                     "|| 5. Search by year             ||" + "\n" +
-                    "|| 6. Search by max Speed        ||" + "\n" +
+                    "|| 6. Search by Speed            ||" + "\n" +
                     "|| 7. Search by sales Price      ||" + "\n" +
                     "|| 8. Exit                       ||" + "\n" +
                     "==================================" + "\n");
@@ -42,14 +42,14 @@ public class SuvSearchInterface {
                     break;
 
                 case 3:
-                    System.out.print("\t* Enter the sedan's fuel type: ");
+                    System.out.print("\t* Enter the SUV's fuel type: ");
                     String fuelType = sc.nextLine();
                     suvList.filterByFuelType(fuelType);
                     suvList.displaySUV(suvList.getFilteredData());
                     break;
 
                 case 5:
-                    System.out.print("\t* Enter the sedan's year: ");
+                    System.out.print("\t* Enter the SUV's year: ");
                     String year = sc.nextLine();
                     suvList.filterByYear(year);
                     suvList.displaySUV(suvList.getFilteredData());
@@ -64,7 +64,7 @@ public class SuvSearchInterface {
                     break;
 
                 case 6:
-                    System.out.print("\t* Enter the sedan's minimum speed: ");
+                    System.out.print("\t* Enter the SUV's speed: ");
                     double maxSpeed = sc.nextDouble();
                     sc.nextLine();
                     suvList.filterBySpeed(maxSpeed);
@@ -72,7 +72,7 @@ public class SuvSearchInterface {
                     break;
 
                 case 7:
-                    System.out.print("\t* Enter the sedan's sales price: ");
+                    System.out.print("\t* Enter the SUV's sales price: ");
                     double salesPrice = sc.nextDouble();
                     sc.nextLine();
                     suvList.filterBySalePrice(salesPrice);
