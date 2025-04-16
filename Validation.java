@@ -20,6 +20,18 @@ public class Validation {
         }
     }
 
+    public boolean validateName(String name) {
+        if (name == null || name.isEmpty()) {
+            System.err.println("Name cannot be empty.");
+            return false;
+        } else if (name.length() < 3) {
+            System.err.println("Name must be atleast 3 characters long.");
+            return false;
+        } else {
+            return true;
+        }
+    }
+
     public boolean validatePrice(double price) {
         double minPrice = 300000.0;
         double maxPrice = 100000000.0;

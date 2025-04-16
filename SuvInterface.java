@@ -6,6 +6,10 @@ public class SuvInterface {
     public static void addSuvIntheList(Scanner sc, Suvlist suvList, Validation v) {
         System.out.print("\t* Enter the name of the SUV: ");
         String name = sc.nextLine();
+        while (!v.validateName(name)) {
+            System.out.print("\t* Enter the name of the SUV: ");
+            name = sc.nextLine();
+        }
 
         System.out.print("\t* Enter the speed of the SUV:(in kmph) ");
         int speed = sc.nextInt();

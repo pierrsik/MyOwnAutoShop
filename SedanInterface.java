@@ -6,6 +6,10 @@ public class SedanInterface {
     public static void addSedanIntheList(Scanner sc, Sedanlist sedanlist, Validation v) {
         System.out.print("\t" + "* Enter the name of the Sedan: ");
         String name = sc.nextLine();
+        while (!v.validateName(name)) {
+            System.out.print("\t" + "* Enter the name of the Sedan: ");
+            name = sc.nextLine();
+        }
 
         System.out.print("\t" + "* Enter the speed of the Sedan(in kmph): ");
         int speed = sc.nextInt();
