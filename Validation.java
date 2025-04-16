@@ -27,6 +27,9 @@ public class Validation {
         } else if (name.length() < 3) {
             System.err.println("Name must be atleast 3 characters long.");
             return false;
+        } else if (!name.matches("[A-Za-z0-9][A-Za-z0-9 ]*")) {
+            System.err.println("Name must only contain letters and numbers.");
+            return false;
         } else {
             return true;
         }
