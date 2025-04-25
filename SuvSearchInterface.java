@@ -11,7 +11,7 @@ public class SuvSearchInterface {
                     "|| 3. Search by Fuel Type        ||" + "\n" +
                     "|| 4. Search by Weight           ||" + "\n" +
                     "|| 5. Search by year             ||" + "\n" +
-                    "|| 6. Search by Speed            ||" + "\n" +
+                    "|| 6. Search by max speed            ||" + "\n" +
                     "|| 7. Search by sales Price      ||" + "\n" +
                     "|| 8. Exit                       ||" + "\n" +
                     "==================================" + "\n");

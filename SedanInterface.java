@@ -104,10 +104,10 @@ public class SedanInterface {
                     SedanSearchInterface.searchOption(sedanlist, sc);
                     break;
                 case 4:
-                    System.out.print("\t" + "* Give the name of the car you want to remove: ");
-                    String carName = sc.nextLine();
-                    sedanlist.removeSedanByName(carName);
-                    System.out.println("|| Sedan removed successfully ||");
+                    System.out.print("\t" + "* Give the id of the car you want to remove: ");
+                    int carId = Integer.parseInt(sc.nextLine());
+                    sedanlist.removeSedanById(carId);
+
                     break;
                 case 5:
                     isValidCondition = true;

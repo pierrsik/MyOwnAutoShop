@@ -129,6 +129,18 @@ public class Sedanlist {
         }
     }
 
+    // method to remove a Sedan object from the list by ID
+    public void removeSedanById(int id) {
+        for (int i = 0; i < SedanList.size(); i++) {
+            if (SedanList.get(i).getId() == id) {
+                SedanList.remove(i);
+                System.out.println("|| Sedan removed successfully ||");
+                return;
+            }
+        }
+        System.err.println("**No Sedan found with the ID: " + id);
+    }
+
     // method to remove a Sedan object from the list by name
     public void removeSedanByName(String name) {
         for (int i = 0; i < SedanList.size(); i++) {

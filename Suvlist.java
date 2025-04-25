@@ -119,6 +119,18 @@ public class Suvlist {
         }
     }
 
+    // method to remove a Suv object from the list by ID
+    public void removeSuvById(int id) {
+        for (int i = 0; i < SuvList.size(); i++) {
+            if (SuvList.get(i).getId() == id) {
+                SuvList.remove(i);
+                System.out.println("|| SUV removed successfully ||");
+                return;
+            }
+        }
+        System.err.println("**No Suv found with the ID: " + id);
+    }
+
     // method to remove a Suv object from the list by name
     public void removeSuvByName(String name) {
         for (int i = 0; i < SuvList.size(); i++) {
