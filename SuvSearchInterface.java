@@ -12,7 +12,7 @@ public class SuvSearchInterface {
                     "|| 4. Search by Weight           ||" + "\n" +
                     "|| 5. Search by year             ||" + "\n" +
                     "|| 6. Search by max speed        ||" + "\n" +
-                    "|| 7. Search by sales Price      ||" + "\n" +
+                    "|| 7. Search by Sales price      ||" + "\n" +
                     "|| 8. Exit                       ||" + "\n" +
                     "==================================" + "\n");
 

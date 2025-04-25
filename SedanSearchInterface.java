@@ -12,7 +12,7 @@ public class SedanSearchInterface {
                     "|| 3. Search by Fuel Type        ||" + "\n" +
                     "|| 4. Search by year             ||" + "\n" +
                     "|| 5. Search by max speed        ||" + "\n" +
-                    "|| 6. Search by sales Price      ||" + "\n" +
+                    "|| 6. Search by Sales price      ||" + "\n" +
                     "|| 7. Return Back                ||" + "\n" +
                     "==================================" + "\n");
             System.out.print("\t* Enter the option for Sedan: ");
