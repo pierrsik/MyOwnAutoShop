@@ -11,7 +11,7 @@ public class SedanSearchInterface {
                     "|| 2. Search by Sedan color      ||" + "\n" +
                     "|| 3. Search by Fuel Type        ||" + "\n" +
                     "|| 4. Search by year             ||" + "\n" +
-                    "|| 5. Search by max speed            ||" + "\n" +
+                    "|| 5. Search by max speed        ||" + "\n" +
                     "|| 6. Search by sales Price      ||" + "\n" +
                     "|| 7. Return Back                ||" + "\n" +
                     "==================================" + "\n");
